@@ -1,0 +1,9 @@
+a:link:hover {
+    color:yellow;
+}
+a:link:active{
+    color:red;
+}
+a:link:target{
+    color:green;
+}

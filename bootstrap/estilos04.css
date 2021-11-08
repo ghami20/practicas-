@@ -1,0 +1,22 @@
+@media screen and (min-width: 400px) {
+	body {
+		min-height: 160vh;
+	}
+	.map-img {
+		width: 70%;
+		height: 70%;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	body {
+		min-height: 180vh;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		min-height: 220vh;
+	}
+	
+}

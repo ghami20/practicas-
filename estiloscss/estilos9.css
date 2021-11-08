@@ -1,0 +1,8 @@
+div.destacado img.importante{
+    opacity: 0.9;
+    border-width: 20px;
+    border-color: red;
+}
+div.destacado{
+    opacity: 0.5;
+} 

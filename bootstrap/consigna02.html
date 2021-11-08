@@ -1,0 +1,152 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fomrulario </title>
+<link rel="stylesheet" media="only screen and (max-width: 768px)" href="estilos1.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1 class="jumbotron text-center">Curricuum vitae </h1>
+</div class="container">
+      <FORM class ="jumbotron text-center" action="/form1.php" method="POST">
+          <div class="mb-3"></div>
+              <LABEL for="nombre">usuario </LABEL>
+              <INPUT type="text" id="nombre" required ><BR>
+          </div>
+          <div class="mb-3"></div>
+              <LABEL for="apellido">contraseña </LABEL>
+              <INPUT type="password" id="apellido" required><BR>
+          </div>
+      </FORM>
+    <div class="jumbotron text-center" >
+        <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#DatosPersonales">
+            DatosPersonales
+        </button>
+        <div class="modal fade" id="DatosPersonales" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <FORM class ="jumbotron text-center" action="/form1.php" method="POST">
+                            <div class="mb-3"></div>
+                                <LABEL for="nombre">usuario </LABEL>
+                                <INPUT type="text" id="nombre" required ><BR>
+                            </div>
+                            <div class="mb-3"></div>
+                                <LABEL for="apellido">apellido </LABEL>
+                                <INPUT type="text" id="apellido" required><BR>
+                            </div>
+                            <div class="mb-3"></div>
+                            <LABEL for="apellido">email </LABEL>
+                            <INPUT type="email" id="apellido" required><BR>
+                        </div>
+                        </FORM>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br >
+        <div class="jumbotron text-center" >
+            <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#Antecedentesacadémicos">
+                Antecedentes académicos
+            </button>
+            <div class="modal fade" id="Antecedentesacadémicos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <FORM class ="jumbotron text-center" action="/form1.php" method="POST">
+                                <div class="mb-3"></div>
+                                    <LABEL for="carrera">Carreras </LABEL>
+                                    <INPUT type="text" id="Carreras" required ><BR>
+                                </div>
+                                <div class="mb-3"></div>
+                                    <LABEL for="estado">finalziada </LABEL>
+                                    <INPUT type="checkbox" id="estado" required><BR>
+                                </div>
+                                <div class="mb-3"></div>
+                                <LABEL for="materias">materias </LABEL>
+                                <INPUT type="number" id="materias" required><BR>
+                            </div>
+                            </FORM>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        <br >
+        <div class="jumbotron text-center" >
+            <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#Experiencialaboral">
+                Experiencia laboral
+            </button>
+            <div class="modal fade" id="Experiencialaboral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <FORM class ="jumbotron text-center" action="/form1.php" method="POST">
+                                <div class="mb-3"></div>
+                                    <LABEL for="trabajos">trabajos </LABEL>
+                                    <INPUT type="text" id="trabajos" required ><BR>
+                                </div>
+                                <div class="mb-3"></div>
+                                    <LABEL for="descripcion">descripcion </LABEL>
+                                    <INPUT type="text" id="descripcion" required><BR>
+                                </div>
+                                <div class="mb-3"></div>
+                                <LABEL for="tiempo">fecha </LABEL>
+                                <INPUT type="date" id="fecha" required><BR>
+                            </div>
+                            </FORM>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        <br >
+        <div class="jumbotron text-center" >
+            <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#Otrosconocimientos">     
+            Otros conocimientos
+            </button>
+            <div class="modal fade" id="Otrosconocimientos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <FORM class ="jumbotron text-center" action="/form1.php" method="POST">
+                                <div class="mb-3"></div>
+                                    <LABEL for="conocimientos">conocimientos </LABEL>
+                                    <INPUT type="text" id="conocimientos"><BR>
+                                </div>
+                            </FORM>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+    </div>
+</div>
+</body>
+</html>
+
