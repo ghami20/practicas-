@@ -1,0 +1,11 @@
+#vacac{
+
+    border-style:solid ;
+    border-radius: 3px;
+    border-color:yellow;
+    background-color: lightslategrey;
+}
+#textlabel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+}

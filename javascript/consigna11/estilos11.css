@@ -1,0 +1,36 @@
+ tr[class="fila_par"] td{
+  background-color: lightgreen;
+
+}
+tr[class="fila_impar"] td {
+
+  background-color: orange;
+}
+
+tr[class="fila_impar"] th {
+
+  background-color: orange;
+}
+
+tr[class="fila_par"] th{
+
+  background-color: orange;
+}
+
+
+
+
+
+tr[class="fila_par"] td:hover{
+  background-color: green;
+
+}
+tr[class="fila_impar"] td:hover {
+
+  background-color: orangered;
+}
+
+tr[class="fila_impar"] th:hover {
+
+  background-color: orangered;
+}

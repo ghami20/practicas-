@@ -1,0 +1,9 @@
+gamaliel|quiroz|123213|dasdasdadasdas
+ola|todo|1321321|untema
+facu|romero|213232|desarrollo
+facu|romero|213232|desarrollo
+facu|romero|213232|desarrollo
+facu|romero|213232|desarrollo
+facu |romero|13213212|desarrollo
+facu |romero|13213212|desarrollo
+gamaliel |quiroz|123212121|tremendo

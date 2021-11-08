@@ -1,0 +1,16 @@
+#mifoto{
+
+    border-style:solid ;
+    border-radius: 3px;
+    border-color:lightskyblue;
+    background-color: lightslategrey;
+}
+#textlabel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+}
+
+.esconder{
+    display: none;
+
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>       
+
+<link href="styles.css" rel="stylesheet">
+
+<script src="script.js"
+  defer></script>
+
+<title>Ejercicio 1</title>
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="card mt-3">
+        <div class="card-body">
+            <!-- despliego la pagina -->
+            <div id="container_form row">
+              <form id="my_form">
+                <div class="row mb-3">
+                  <label for="NroCliente" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label">Numero de cliente</label>
+                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                    <input type="number" class="form-control" id="NroCliente" name="NroCliente" required min="1" max="20.000">
+                    <div class="invalid-feedback" id="NroCliente-error1">
+                       El Número de cliente debe ser un número entero sin decimales.
+                    </div>
+                    <div class="invalid-feedback" id="NroCliente-error2">
+                      El Número de cliente debe oscilar entre 1 y 20.000 
+                   </div>
+                  </div>
+                <label for="Nombre" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label">Nombre completo</label>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <input type="text" class="form-control" id="Nombre" name="Nombre" required>
+                <div class="invalid-feedback" id="Nombre_error_1">
+                  El nombre debe tener por lo menos dos palabras de 3 caracteres
+                </div>
+                <div class="invalid-feedback" id="Nombre_error_2">
+                  El nombre debe tener 3 caracteres minimo 
+                </div>
+                <br>
+                <div class="row mb-3">
+                    <select id="tipodocumento" class="form-select form-select col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label" required>
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"></div>
+                      <option value = "tipo_documento"> Tipo docmento</option>
+                      <option value="DNI">DNI </option>
+                      <option value="LC">LC/LE</option>
+                      <option value ="otros">Otros</option>
+                      </div>
+                    </select>
+                  </div>
+                  <div class="invalid-feedback" id="error_tipodocumento">
+                    debe seleccionar un tipo de documento 
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Numerodocumento" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label">Numero de documento</label>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                      <input type="text" class="form-control" id="Numerodocumento" name="Numerodocumento" required>
+                      <div class="invalid-feedback" id="error_Numero_documento_DNI">
+                        El dni debe tener entre entre 7 y 8 dígitos
+                      </div>
+
+                      <div class="invalid-feedback" id="error_Numero_documento_LC">
+                        el LC/LE debe contener entre 6 y 8 dígitos.
+                      </div>
+                      <div class="invalid-feedback" id="error_Numero_documento_caracteres">
+                        debe completar este campo con numeros
+                      </div>
+                      <div class="invalid-feedback" id="error_Numero_documento_otros">
+                        Debe completar con algo este campo 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="Mail" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label">Email</label>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                      <input type="mail" class="form-control" id="Mail" name="Mail" required>
+                      <div class="invalid-feedback" id="error_Mail">
+                        El mail es incorrecto 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="Reclamo" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-label">Detalle reclamo</label>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                      <input type="text" class="form-control" id="Reclamo" name="Reclamo" required>
+                       <span class="error d-none">Error en Resultado</span> 
+                      <div class="invalid-feedback" id="error_Reclamo1">
+                        El Reclamo debe tener al menos 10 palabras y como maximo 200
+                      </div> 
+               
+                    </div>
+                  </div>
+                  <div class="row sm-3">
+
+                    <button id="Validar" type="button" class="btn btn-success" >Validar</button> 
+                    <button id="Enviar" type="button" class="btn btn-success" data-bs-toggle="modal"  data-bs-target="#exampleModal">Enviar</button> 
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Envio de reporte</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        informacion guardada satisfactoriamente 
+      </div>
+      <div class="modal-footer">
+        <button id="Cerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

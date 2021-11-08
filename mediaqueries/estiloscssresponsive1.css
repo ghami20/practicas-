@@ -1,0 +1,9 @@
+@media screen and(max-width: 360px and max-height: 640px){
+    body{
+        background-color:  coral ;
+    }
+    p{
+        border-radius: 8px;
+        border: 9px active green;
+    }
+}
